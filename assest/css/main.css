@@ -1,0 +1,43 @@
+:root{
+ --mainFont:"Exo", sans-serif;
+ --mainColor:#FF782D
+}
+
+
+/* start of header */
+.main-font{
+font-family: var(--mainFont);
+}
+
+.main-color{
+    color: var(--mainColor);
+}
+.navbar-brand{
+    font-weight: 700;
+    size: 28px;
+}
+
+.nav-item{
+    font-family: var(--mainFont);
+    font-weight: 600px;
+  font-size: 16px;
+}
+.edu-icon{
+    width: 20%;
+   
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+
+.search-icon{
+    border: 2px solid var(--mainColor);
+    padding: 10px;
+    border-radius: 24%;
+    width: 48px;
+    height: 48px;
+}
+
+/* end of header */
