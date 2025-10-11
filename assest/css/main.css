@@ -1,70 +1,98 @@
-:root{
- --mainFont:"Exo", sans-serif;
- --mainColor:#FF782D
+:root {
+  --mainFont: "Exo", sans-serif;
+  --mainColor: #ff782d;
 }
 
-body{
-    height: 1000vh;
+body {
+  height: 1000vh;
 }
 
 /* start of header */
-.main-font{
-font-family: var(--mainFont);
+.main-font {
+  font-family: var(--mainFont);
 }
 
-.main-color{
-    color: var(--mainColor);
+.main-color {
+  color: var(--mainColor);
 }
-.navbar-brand{
-    font-weight: 700;
-    size: 28px;
+.navbar-brand {
+  font-weight: 700;
+  size: 28px;
 }
 
-.nav-item{
-    font-family: var(--mainFont);
-    font-weight: 600px;
+.nav-item {
+  font-family: var(--mainFont);
+  font-weight: 600px;
   font-size: 16px;
   font-weight: bolder;
 }
-.edu-icon{
-    width: 20%;  
+.edu-icon {
+  width: 20%;
 }
 
-
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: var(--mainColor);
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--mainColor);
 }
 
-.search-icon{
-    border: 2px solid var(--mainColor);
-   align-items: center;
-    width: 48px;
-    height: 48px;
-   
+.search-icon {
+  border: 2px solid var(--mainColor);
+  align-items: center;
+  width: 48px;
+  height: 48px;
 }
-
 
 /* end of header */
 
-
 /* start of hero */
-.hero{
-    background-image: url('./../imges/hero-background.webp');
-    position: relative;
-    width: 100%;
+.hero {
+  background-image: url("./../imges/hero-background.webp");
+  position: relative;
+  width: 100%;
+ 
 }
-.online-school{
-    width: 50%;
-    position: relative;
-    top: 141px;
-   left: 720px;
-   z-index: 0;
+.online-school {
+  width: 50%;
+  position: absolute;
+  top: 12%;
+  right: 18%;;
+  z-index: 0;
 }
-.student-girl{
-    z-index: 1;
-    width: 50%;
-    position: relative;
-    top: -379px;
-   left: 900px;
+.student-girl {
+  z-index: 1;
+  width: 48.5%;
+  position: absolute;
+  top: 0px;
+ right: 10px;
 }
+.Vector{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.hero-content{
+   position: absolute;
+   bottom: 250px;
+   left: 100px;
+   font-family: var(--mainFont);
+}
+.hero-content h1{
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 0%;
+    line-height: 120%;
+
+}
+.hero-content p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+  width: 530px;
+}
+.hero-content button{
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+
 /* end of hero */
