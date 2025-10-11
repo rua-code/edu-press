@@ -3,6 +3,9 @@
  --mainColor:#FF782D
 }
 
+body{
+    height: 1000vh;
+}
 
 /* start of header */
 .main-font{
@@ -42,3 +45,26 @@ font-family: var(--mainFont);
 
 
 /* end of header */
+
+
+/* start of hero */
+.hero{
+    background-image: url('./../imges/hero-background.webp');
+    position: relative;
+    width: 100%;
+}
+.online-school{
+    width: 50%;
+    position: relative;
+    top: 141px;
+   left: 720px;
+   z-index: 0;
+}
+.student-girl{
+    z-index: 1;
+    width: 50%;
+    position: relative;
+    top: -379px;
+   left: 900px;
+}
+/* end of hero */
