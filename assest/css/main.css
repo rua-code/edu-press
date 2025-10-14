@@ -96,3 +96,54 @@ body {
 }
 
 /* end of hero */
+
+/* top categories */
+.top-description{
+  color: rgba(85, 85, 85, 1);
+  font-weight: 400px;
+
+}
+.Top-Categories .btn{
+border-radius: 24px;
+padding: 10px 24px;
+  align-self: center;
+  border: 2px solid rgba(157, 157, 157, 1);
+}
+.titel button{
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 80px;
+}
+.Top-Categories .row{
+  gap: 24px;
+}
+.card{
+  width: 234px;
+  height: 234px;
+  border-radius: 20px;
+ border: 1px solid rgba(234, 234, 234, 1);
+ transition: all .6s;
+  
+}
+.card h2{
+  font-size: 20px;
+  font-weight: 600;
+   font-family: "Exo", sans-serif;
+   color: black;
+   transition:all .6s;
+}
+.card p{
+  color: rgba(85, 85, 85, 1);
+}
+
+
+.card:hover h2{
+  color: var(--mainColor);
+}
+
+.card:hover {
+  filter: drop-shadow(2px 2px 5px  rgba(0, 0, 0, 0.1));
+  transform: translateY(-5px); 
+}
+
+/* end of top categories */
