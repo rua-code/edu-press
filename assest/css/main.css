@@ -162,3 +162,16 @@ padding: 10px 24px;
   
 }
 /* end of feature courses */
+
+/* footer */
+footer{
+  background-color:rgba(245, 245, 245, 1);
+}
+
+footer .edu-icon{
+  width:40px;
+}
+.footer-desription{
+  width: 27%;
+}
+/* end of footer */

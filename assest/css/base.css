@@ -11,3 +11,10 @@
 .bg-prim{
     background-color: var(--mainColor);
 }
+a{
+    text-decoration: none;
+}
+
+.vh-80{
+    height: 80vh;
+}
