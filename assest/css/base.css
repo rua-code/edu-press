@@ -1,3 +1,13 @@
+
+:root {
+  --mainFont: "Exo", sans-serif;
+  --mainColor: #ff782d;
+}
+
 .sec-font{
     font-family: "Exo", sans-serif;;
+}
+
+.bg-prim{
+    background-color: var(--mainColor);
 }
