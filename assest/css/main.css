@@ -117,7 +117,7 @@ padding: 10px 24px;
 .Top-Categories .row{
   gap: 24px;
 }
-.card{
+.Top-Categories .card{
   width: 234px;
   height: 234px;
   border-radius: 20px;
@@ -147,3 +147,22 @@ padding: 10px 24px;
 }
 
 /* end of top categories */
+
+/* featured courses */
+.featured-courses .card{
+  border-radius: 20px;
+  height: 474px;
+  padding: 0px 0px;
+}
+.card-img-top{
+  width: 400px;
+  height: 250px;
+  border-top-left-radius:20px;
+  border-top-right-radius: 20px;
+}
+.card-body{
+   border-bottom-left-radius:20px;
+  border-bottom-right-radius: 20px;
+  
+}
+/* end of feature courses */
