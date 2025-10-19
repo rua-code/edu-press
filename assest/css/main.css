@@ -172,6 +172,32 @@ footer .edu-icon{
   width:40px;
 }
 .footer-desription{
-  width: 27%;
+  width: 50%;
 }
+.footer-item a{
+  color: rgba(85, 85, 85, 1);
+}
+.footer-item address{
+  width: 80%;
+   color: rgba(85, 85, 85, 1);
+}
+
+.footer-item:hover a {
+color: var(--mainColor);
+}
+
+
+
+.footer-item:hover .social-icon {
+color: #000;
+}
+
+.Copyright{
+display: flex;
+ justify-content: center;
+  align-items: center;
+  padding-top: 40px ;
+  padding-bottom: 0px;
+}
+
 /* end of footer */
