@@ -176,28 +176,42 @@ footer .edu-icon{
 }
 .footer-item a{
   color: rgba(85, 85, 85, 1);
+ transition:all .6s;
 }
 .footer-item address{
   width: 80%;
    color: rgba(85, 85, 85, 1);
+   transition:all .6s;
 }
 
-.footer-item:hover a {
+.footer-item a:hover  {
 color: var(--mainColor);
+ 
+}
+
+.footer-item address:hover {
+  color: var(--mainColor);
 }
 
 
 
-.footer-item:hover .social-icon {
-color: #000;
+.Contact-icons svg path{
+   transition:all .6s;
+}
+.Contact-icons svg:hover path{
+fill: var(--mainColor);
 }
 
-.Copyright{
+footer .Copyright{
 display: flex;
  justify-content: center;
   align-items: center;
   padding-top: 40px ;
-  padding-bottom: 0px;
+  padding-bottom:5px;
+  margin-bottom: 0px;
+color: rgba(85, 85, 85, 1);
+font-size: 14px;
+font-weight: 400;
 }
 
 /* end of footer */
