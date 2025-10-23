@@ -231,6 +231,41 @@ padding: 10px 24px;
   font-weight: 400;
 }
 /* ad-2 */
+
+/* ad-3 */
+.ad-3{
+  background-image: url("./../ad-3.webp");
+height: 300px;
+}
+.ad-3 button{
+    border-radius: 24px;
+padding: 10px 24px;
+  align-self: center;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+/* ad-3 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 footer{
   background-color:rgba(245, 245, 245, 1);
