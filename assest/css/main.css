@@ -149,6 +149,13 @@ padding: 10px 24px;
   border-radius: 20px;
   height: 474px;
   padding: 0px 0px;
+   transition:all .6s;
+}
+.featured-courses .btn{
+border-radius: 24px;
+padding: 10px 24px;
+  align-self: center;
+  border: 2px solid rgba(157, 157, 157, 1);
 }
 .card-img-top{
   width: 400px;
@@ -159,9 +166,54 @@ padding: 10px 24px;
 .card-body{
    border-bottom-left-radius:20px;
   border-bottom-right-radius: 20px;
-  
+}
+.featured-courses .card-body p{
+  color: black;
+  size: 16px;
+  font-weight: 600;
+}
+.featured-courses .card:hover h4{
+  color: var(--mainColor);
+}
+.BY{
+  color:rgba(85, 85, 85, 1)
+}
+.old-price{
+  text-decoration: line-through;
 }
 /* end of feature courses */
+
+/* start of ad1 */
+
+.ad-1{
+background-image: url("./../imges/ad-1.webp");
+height: 324px;
+
+}
+.ad-1 .btn{
+border-radius: 24px;
+padding: 10px 24px;
+  align-self: center;
+ color: white;
+  background-color: var(--mainColor);
+}
+.ad-content{
+  padding-left: 30px;
+}
+.ad-content p{
+  color: rgba(85, 85, 85, 1);
+}
+
+/* end of ad1 */
+
+/*  start of Statistics */
+.Statistics .card{
+  background-color: rgba(245, 245, 245, 1);
+}
+.Statistics h2{
+  color: var(--mainColor);
+}
+/* end of Statistics */
 
 /* footer */
 footer{
