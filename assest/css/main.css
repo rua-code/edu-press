@@ -215,6 +215,22 @@ padding: 10px 24px;
 }
 /* end of Statistics */
 
+/* ad-2 */
+.right-side{
+  width: 50%;
+}
+.Adv-2 button{
+  border-radius: 24px;
+padding: 10px 24px;
+  align-self: flex-start;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+.Adv-2 p{
+  color: rgba(85, 85, 85, 1);
+  font-weight: 400;
+}
+/* ad-2 */
 /* footer */
 footer{
   background-color:rgba(245, 245, 245, 1);
