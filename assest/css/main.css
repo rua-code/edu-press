@@ -246,10 +246,64 @@ padding: 10px 24px;
 }
 /* ad-3 */
 
+/* feedbacks */
+.feed-back .card{
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  border: 1px solid rgba(234, 234, 234, 1);
+}
+.feed-back .card {
+  padding: 20px 3px;
+}
+/* end of feedbacks */
 
 
+/* ad-4 */
+.ad-4{
+  background-image: url("./../imges/ad-4.png");
+height: 250px;
+position: relative;
+}
+.student-avatar{
 
+  width: 120px;
+}
+.ad4-content{
+  position: absolute;
+  top:60px;
+  left: 20px;
+}
+.ad-4 button{
+  border-radius: 24px;
+padding: 10px 24px;
+  align-self: flex-start;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+.ad-4 .student-btn{
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
+}
+/* ad-4 */
 
+/* Latest-articles */
+.Latest-articles button{
+  border-radius: 24px;
+padding: 10px 24px;
+  align-self: center;
+  border: 2px solid rgba(157, 157, 157, 1);
+
+}
+.articles .card{
+  border-radius: 20px;
+}
+.card h4{
+  transition: all .6s;
+}
+.articles .card:hover h4{
+  color: var(--mainColor);
+}
+/* Latest-articles */
 
 
 
