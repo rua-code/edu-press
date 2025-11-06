@@ -1,0 +1,14 @@
+.All-Courses-header{
+    gap: 450px;
+}
+
+.courses-content .card{
+  border-radius: 20px;
+  height: 474px;
+  padding: 0px 0px;
+   transition:all .6s;
+}
+
+.Course-category :hover .remember-label{
+  color: black;
+}

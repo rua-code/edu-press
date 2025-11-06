@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses</title>
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <!-- font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- googel fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!--custom css -->
+  <link href="./assest/css/base.css" rel="stylesheet" />
+  <link href="./assest/css/main.css" rel="stylesheet" />
+  <link href="./assest/css/Courses.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light position-sticky w-100 d-flex">
+      <div class="container">
+        <div class="edu-titel d-flex gap-1">
+          <img class="edu-icon" src="./assest/imges/edu-icon.svg" />
+          <a class="navbar-brand main-font" href="#">EduPress</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+          <ul class="navbar-nav d-flex gap-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                page
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LearnPress Add-On</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Premium Theme</a>
+            </li>
+          </ul>
+          <div class="Register">
+            <ul class="navbar-nav d-flex text-center justify-content-center align-items-center mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./Login.html">Login / Register</a>
+              </li>
+              <li>
+                <div class="search-icon d-flex justify-content-center rounded-circle text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 512 512">
+                    <path fill="#ff782d"
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="py-5">
+      <div class="container">
+        <div class="courses-section-header d-flex justify-content-between align-items-start">
+          <div class="All-Courses">
+            <div class="All-Courses-header d-flex align-items-center">
+              <h1 class="main-font fw-semibold">All Courses</h1>
+              <div class="search-bar d-flex gap-1 border-bottom">
+                <form>
+                  <input type="text" placeholder="Search" class="border border-0" />
+                </form>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="15" width="15" viewBox="0 0 512 512">
+                    <path fill="#000000"
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="courses-content d-flex gap-5 align-items-start justify-content-c py-3">
+
+              <div class="courses-left-side  d-flex flex-column gap-3 ">
+                <div class="card" style="width: 25rem">
+                  <img src="./assest/imges/featured-course-lms-website.webp" class="card-img-top"
+                    alt="featured-course-lms-website" />
+                  <div class="card-body bg-light">
+                    <p class="card-text sec-font">
+                      <span class="BY sec-font">by</span> Determined-Poitras
+                    </p>
+                    <h4>Create an LMS Website with LearnPress</h4>
+
+                    <div class="course-info d-flex align-items-center gap-3">
+                      <div class="time">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+
+                          <path fill="#ff782d"
+                            d="M504.4 132.5c-4.5 10.5-18.4 9.8-24.9 .4-27.8-40-66.1-72.2-111-92.6-10.4-4.7-13.7-18.3-4.1-24.6 15-9.9 33-15.7 52.3-15.7 52.6 0 95.2 42.6 95.2 95.2 0 13.2-2.7 25.8-7.6 37.3zm-471.9 .4c-6.5 9.4-20.5 10.1-24.9-.4-4.9-11.5-7.6-24.1-7.6-37.3 0-52.6 42.6-95.2 95.2-95.2 19.3 0 37.3 5.8 52.3 15.7 9.6 6.3 6.3 19.9-4.1 24.6-44.8 20.4-83.1 52.6-111 92.6zM390.2 467.4C352.8 495.4 306.3 512 256 512s-96.8-16.6-134.1-44.6L86.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l35.2-35.2C48.6 384.8 32 338.3 32 288 32 164.3 132.3 64 256 64S480 164.3 480 288c0 50.3-16.6 96.8-44.6 134.2l35.2 35.2c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-35.2-35.2zM280 184c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l56 56c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-49-49 0-94.1z" />
+                        </svg>
+                        <span>2weeks</span>
+                      </div>
+                      <div class="student-number">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512">
+
+                          <path fill="#ff782d"
+                            d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z" />
+                        </svg>
+                        <span>156 Students</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer border-top pt-3 d-flex justify-content-between align-items-center">
+                    <price class="d-flex align-items-center gap-2">
+                      <p class="old-price">$29.0</p>
+                      <p class="text-success fw-semibold">Free</p>
+                    </price>
+
+                    <a href="#" class="fw-bold text-dark">View More</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 25rem">
+                  <img src="./assest/imges/lms web.webp" class="card-img-top" alt="featured-course-lms-website" />
+                  <div class="card-body bg-light">
+                    <p class="card-text sec-font">
+                      <span class="BY sec-font">by</span> Determined-Poitras
+                    </p>
+                    <h4>Create an LMS Website with LearnPress</h4>
+
+                    <div class="course-info d-flex align-items-center gap-3">
+                      <div class="time">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+
+                          <path fill="#ff782d"
+                            d="M504.4 132.5c-4.5 10.5-18.4 9.8-24.9 .4-27.8-40-66.1-72.2-111-92.6-10.4-4.7-13.7-18.3-4.1-24.6 15-9.9 33-15.7 52.3-15.7 52.6 0 95.2 42.6 95.2 95.2 0 13.2-2.7 25.8-7.6 37.3zm-471.9 .4c-6.5 9.4-20.5 10.1-24.9-.4-4.9-11.5-7.6-24.1-7.6-37.3 0-52.6 42.6-95.2 95.2-95.2 19.3 0 37.3 5.8 52.3 15.7 9.6 6.3 6.3 19.9-4.1 24.6-44.8 20.4-83.1 52.6-111 92.6zM390.2 467.4C352.8 495.4 306.3 512 256 512s-96.8-16.6-134.1-44.6L86.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l35.2-35.2C48.6 384.8 32 338.3 32 288 32 164.3 132.3 64 256 64S480 164.3 480 288c0 50.3-16.6 96.8-44.6 134.2l35.2 35.2c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-35.2-35.2zM280 184c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l56 56c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-49-49 0-94.1z" />
+                        </svg>
+                        <span>2weeks</span>
+                      </div>
+                      <div class="student-number">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512">
+
+                          <path fill="#ff782d"
+                            d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z" />
+                        </svg>
+                        <span>156 Students</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer border-top pt-3 d-flex justify-content-between align-items-center">
+                    <price class="d-flex align-items-center gap-2">
+                      <p class="old-price">$29.0</p>
+                      <p class="text-success fw-semibold">Free</p>
+                    </price>
+
+                    <a href="#" class="fw-bold text-dark">View More</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 25rem">
+                  <img src="./assest/imges/lms 3.webp" class="card-img-top" alt="featured-course-lms-website" />
+                  <div class="card-body bg-light">
+                    <p class="card-text sec-font">
+                      <span class="BY sec-font">by</span> Determined-Poitras
+                    </p>
+                    <h4>Create an LMS Website with LearnPress</h4>
+
+                    <div class="course-info d-flex align-items-center gap-3">
+                      <div class="time">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+
+                          <path fill="#ff782d"
+                            d="M504.4 132.5c-4.5 10.5-18.4 9.8-24.9 .4-27.8-40-66.1-72.2-111-92.6-10.4-4.7-13.7-18.3-4.1-24.6 15-9.9 33-15.7 52.3-15.7 52.6 0 95.2 42.6 95.2 95.2 0 13.2-2.7 25.8-7.6 37.3zm-471.9 .4c-6.5 9.4-20.5 10.1-24.9-.4-4.9-11.5-7.6-24.1-7.6-37.3 0-52.6 42.6-95.2 95.2-95.2 19.3 0 37.3 5.8 52.3 15.7 9.6 6.3 6.3 19.9-4.1 24.6-44.8 20.4-83.1 52.6-111 92.6zM390.2 467.4C352.8 495.4 306.3 512 256 512s-96.8-16.6-134.1-44.6L86.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l35.2-35.2C48.6 384.8 32 338.3 32 288 32 164.3 132.3 64 256 64S480 164.3 480 288c0 50.3-16.6 96.8-44.6 134.2l35.2 35.2c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-35.2-35.2zM280 184c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l56 56c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-49-49 0-94.1z" />
+                        </svg>
+                        <span>2weeks</span>
+                      </div>
+                      <div class="student-number">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512">
+
+                          <path fill="#ff782d"
+                            d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z" />
+                        </svg>
+                        <span>156 Students</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer border-top pt-3 d-flex justify-content-between align-items-center">
+                    <price class="d-flex align-items-center gap-2">
+                      <p class="old-price">$29.0</p>
+                      <p class="text-success fw-semibold">Free</p>
+                    </price>
+
+                    <a href="#" class="fw-bold text-dark">View More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="courses-right-side  d-flex flex-column gap-3 ">
+                <div class="card" style="width: 25rem">
+                  <img src="./assest/imges/design a web.webp" class="card-img-top" alt="featured-course-lms-website" />
+                  <div class="card-body bg-light">
+                    <p class="card-text sec-font">
+                      <span class="BY sec-font">by</span> Determined-Poitras
+                    </p>
+                    <h4>Design a website with ThimPress</h4>
+
+                    <div class="course-info d-flex align-items-center gap-3">
+                      <div class="time">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+
+                          <path fill="#ff782d"
+                            d="M504.4 132.5c-4.5 10.5-18.4 9.8-24.9 .4-27.8-40-66.1-72.2-111-92.6-10.4-4.7-13.7-18.3-4.1-24.6 15-9.9 33-15.7 52.3-15.7 52.6 0 95.2 42.6 95.2 95.2 0 13.2-2.7 25.8-7.6 37.3zm-471.9 .4c-6.5 9.4-20.5 10.1-24.9-.4-4.9-11.5-7.6-24.1-7.6-37.3 0-52.6 42.6-95.2 95.2-95.2 19.3 0 37.3 5.8 52.3 15.7 9.6 6.3 6.3 19.9-4.1 24.6-44.8 20.4-83.1 52.6-111 92.6zM390.2 467.4C352.8 495.4 306.3 512 256 512s-96.8-16.6-134.1-44.6L86.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l35.2-35.2C48.6 384.8 32 338.3 32 288 32 164.3 132.3 64 256 64S480 164.3 480 288c0 50.3-16.6 96.8-44.6 134.2l35.2 35.2c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-35.2-35.2zM280 184c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l56 56c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-49-49 0-94.1z" />
+                        </svg>
+                        <span>2weeks</span>
+                      </div>
+                      <div class="student-number">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512">
+
+                          <path fill="#ff782d"
+                            d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z" />
+                        </svg>
+                        <span>156 Students</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer border-top pt-3 d-flex justify-content-between align-items-center">
+                    <price class="d-flex align-items-center gap-2">
+                      <p class="old-price">$59.0</p>
+                      <p class="text-danger fw-semibold">$49.0</p>
+                    </price>
+
+                    <a href="#" class="fw-bold text-dark">View More</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 25rem">
+                  <img src="./assest/imges/lms web2.webp" class="card-img-top" alt="featured-course-lms-website" />
+                  <div class="card-body bg-light">
+                    <p class="card-text sec-font">
+                      <span class="BY sec-font">by</span> Determined-Poitras
+                    </p>
+                    <h4>Create an LMS Website with LearnPress</h4>
+
+                    <div class="course-info d-flex align-items-center gap-3">
+                      <div class="time">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+
+                          <path fill="#ff782d"
+                            d="M504.4 132.5c-4.5 10.5-18.4 9.8-24.9 .4-27.8-40-66.1-72.2-111-92.6-10.4-4.7-13.7-18.3-4.1-24.6 15-9.9 33-15.7 52.3-15.7 52.6 0 95.2 42.6 95.2 95.2 0 13.2-2.7 25.8-7.6 37.3zm-471.9 .4c-6.5 9.4-20.5 10.1-24.9-.4-4.9-11.5-7.6-24.1-7.6-37.3 0-52.6 42.6-95.2 95.2-95.2 19.3 0 37.3 5.8 52.3 15.7 9.6 6.3 6.3 19.9-4.1 24.6-44.8 20.4-83.1 52.6-111 92.6zM390.2 467.4C352.8 495.4 306.3 512 256 512s-96.8-16.6-134.1-44.6L86.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l35.2-35.2C48.6 384.8 32 338.3 32 288 32 164.3 132.3 64 256 64S480 164.3 480 288c0 50.3-16.6 96.8-44.6 134.2l35.2 35.2c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-35.2-35.2zM280 184c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l56 56c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-49-49 0-94.1z" />
+                        </svg>
+                        <span>2weeks</span>
+                      </div>
+                      <div class="student-number">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512">
+
+                          <path fill="#ff782d"
+                            d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z" />
+                        </svg>
+                        <span>156 Students</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer border-top pt-3 d-flex justify-content-between align-items-center">
+                    <price class="d-flex align-items-center gap-2">
+                      <p class="old-price">$29.0</p>
+                      <p class="text-success fw-semibold">Free</p>
+                    </price>
+
+                    <a href="#" class="fw-bold text-dark">View More</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 25rem">
+                  <img src="./assest/imges/lms4.webp" class="card-img-top" alt="featured-course-lms-website" />
+                  <div class="card-body bg-light">
+                    <p class="card-text sec-font">
+                      <span class="BY sec-font">by</span> Determined-Poitras
+                    </p>
+                    <h4>Create an LMS Website with LearnPress</h4>
+
+                    <div class="course-info d-flex align-items-center gap-3">
+                      <div class="time">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" viewBox="0 0 512 512">
+
+                          <path fill="#ff782d"
+                            d="M504.4 132.5c-4.5 10.5-18.4 9.8-24.9 .4-27.8-40-66.1-72.2-111-92.6-10.4-4.7-13.7-18.3-4.1-24.6 15-9.9 33-15.7 52.3-15.7 52.6 0 95.2 42.6 95.2 95.2 0 13.2-2.7 25.8-7.6 37.3zm-471.9 .4c-6.5 9.4-20.5 10.1-24.9-.4-4.9-11.5-7.6-24.1-7.6-37.3 0-52.6 42.6-95.2 95.2-95.2 19.3 0 37.3 5.8 52.3 15.7 9.6 6.3 6.3 19.9-4.1 24.6-44.8 20.4-83.1 52.6-111 92.6zM390.2 467.4C352.8 495.4 306.3 512 256 512s-96.8-16.6-134.1-44.6L86.6 502.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l35.2-35.2C48.6 384.8 32 338.3 32 288 32 164.3 132.3 64 256 64S480 164.3 480 288c0 50.3-16.6 96.8-44.6 134.2l35.2 35.2c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0l-35.2-35.2zM280 184c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 104c0 6.4 2.5 12.5 7 17l56 56c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-49-49 0-94.1z" />
+                        </svg>
+                        <span>2weeks</span>
+                      </div>
+                      <div class="student-number">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="15.75" viewBox="0 0 576 512">
+
+                          <path fill="#ff782d"
+                            d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z" />
+                        </svg>
+                        <span>156 Students</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer border-top pt-3 d-flex justify-content-between align-items-center">
+                    <price class="d-flex align-items-center gap-2">
+                      <p class="old-price">$29.0</p>
+                      <p class="text-success fw-semibold">Free</p>
+                    </price>
+
+                    <a href="#" class="fw-bold text-dark">View More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Course-category d-flex flex-column gap-4">
+
+
+            <div class="Course-category">
+
+              <h4 class=" main-font fw-semibold fs-4">Course category</h4>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">Commercial</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">Office</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">Shop</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">Educate</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">Academy</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">Single family home</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">Studio</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">University</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+            </div>
+            <div class="Course-category ">
+
+              <h4 class="main-font fs-4 fw-semibold">Instructors</h4>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">Kenny White</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">John Doe</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+
+
+
+
+            </div>
+            <div class="Course-category ">
+              <h4 class="main-font fs-4 fw-semibold">Price</h4>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">All</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">free</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <label class="remember-label">
+                  <input type="checkbox">
+                  <span class="text-secondary">paid</span>
+                </label>
+                <span class="text-secondary">15</span>
+              </div>
+
+            </div>
+            <div class="Course-category ">
+              <h4 class="main-font fs-4 fw-semibold">Review</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <label class="remember-label d-flex align-items-start gap-1">
+                  <input type="checkbox">
+                  <div class="stars d-flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                  </div>
+                </label>
+                <span class="text-secondary">(1,025)</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <label class="remember-label d-flex align-items-start gap-1">
+                  <input type="checkbox">
+                  <div class="stars d-flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                  </div>
+                </label>
+                <span class="text-secondary">(1,025)</span>
+              </div>
+             <div class="d-flex justify-content-between align-items-center">
+                <label class="remember-label d-flex align-items-start gap-1">
+                  <input type="checkbox">
+                  <div class="stars d-flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                  </div>
+                </label>
+                <span class="text-secondary">(1,025)</span>
+              </div>    <div class="d-flex justify-content-between align-items-center">
+                <label class="remember-label d-flex align-items-start gap-1">
+                  <input type="checkbox">
+                  <div class="stars d-flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                  </div>
+                </label>
+                <span class="text-secondary">(1,025)</span>
+              </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                <label class="remember-label d-flex align-items-start gap-1">
+                  <input type="checkbox">
+                  <div class="stars d-flex gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#f4bf08"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="12" width="13.5" viewBox="0 0 576 512">
+                      <path fill="#9d9d9d"
+                        d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z" />
+                    </svg>
+                  </div>
+                </label>
+                <span class="text-secondary">(1,025)</span>
+              </div>
+            </div>
+<div class="Course-category ">
+            <h4 class="main-font fs-4 fw-semibold">Level</h4>
+            <div class="d-flex justify-content-between">
+              <label class="remember-label">
+                <input type="checkbox">
+                <span class="text-secondary">All levels</span>
+              </label>
+              <span class="text-secondary">15</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <label class="remember-label">
+                <input type="checkbox">
+                <span class="text-secondary">Beginner</span>
+              </label>
+              <span class="text-secondary">15</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <label class="remember-label">
+                <input type="checkbox">
+                <span class="text-secondary">Intermidiate</span>
+              </label>
+              <span class="text-secondary">15</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <label class="remember-label">
+                <input type="checkbox">
+                <span class="text-secondary">Expert</span>
+              </label>
+              <span class="text-secondary">15</span>
+            </div>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+      <div class="container py-5">
+        <div class="row justify-content-center  ">
+            <div class="col-12 col-md-4">
+              <div class="left-side-footer d-flex flex-column gap-3">
+                <div class="edu-titel d-flex gap-1">
+                  <img class="edu-icon" src="./assest/imges/edu-icon.svg" />
+                  <a class="navbar-brand main-font" href="#">EduPress</a>
+                </div>
+                <p class="footer-desription">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+             
+                  <div class="col-12 col-md-2">
+ <div class="footer-item d-flex flex-column gap-5">
+                    <h4>GET HELP</h4>
+                    <nav class="d-flex flex-column gap-2">
+                      <a href="#">Contact Us</a>
+                      <a href="#">Latest Articles</a>
+                      <a href="#">FAQ</a>
+                    </nav>
+                  </div>
+                 
+                 
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="footer-item d-flex flex-column gap-5">
+                    <h4>PROGRAMS</h4>
+                    <nav class="d-flex flex-column gap-2">
+                      <a href="#">Art & Design</a>
+                      <a href="#">Business</a>
+                      <a href="#">IT & Software</a>
+                      <a href="#">Languages</a>
+                      <a href="#">Programming</a>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-12 col-md-2">
+                  <div class="footer-item d-flex flex-column gap-5">
+                    <h4>CONTACT US</h4>
+                    <nav class="d-flex flex-column gap-2">
+                      <address class="w-20">
+                        Address: 2321 New Design Str, Lorem Ipsum10 Hudson
+                        Yards, USA
+                      </address>
+                      <a href="#">Tel: + (123) 2500-567-8988</a>
+                      <a href="#">Mail: supportlms@gmail.com</a>
+                    </nav>
+                    <div class="Contact-icons d-flex gap-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        width="12.5"
+                        class="social-icon"
+                        viewBox="0 0 320 512"
+                      >
+                        <path
+                          fill="#555555"
+                          d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        width="15"
+                        viewBox="0 0 384 512"
+                      >
+                        <path
+                          fill="#555555"
+                          d="M204 6.5c-102.6 0-204 68.4-204 179.1 0 70.4 39.6 110.4 63.6 110.4 9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8 0-99.3-85.8-164.1-180-164.1z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        width="17.5"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="#555555"
+                          d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        width="17.5"
+                        viewBox="0 0 448 512"
+                      >
+                        <path
+                          fill="#555555"
+                          d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20"
+                        width="22.5"
+                        viewBox="0 0 576 512"
+                      >
+                        <path
+                          fill="#555555"
+                          d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+              
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="Copyright sec-font"
+        >Copyright © 2024 LearnPress LMS | Powered by ThimPress</span
+      >
+    </footer>
+</body>
+
+</html>
